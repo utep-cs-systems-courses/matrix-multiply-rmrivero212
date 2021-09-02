@@ -9,9 +9,24 @@ def matrixMultiply(a, b):
 
     for i in range(len(a)):
         for j in range(len(b[0])):
-            for k in range(len(b)):
+            for k in range(len(b)):r
                 c[i][j] += a[i][k] * b[k][j]
     return c
+
+def blocked(a, b):
+    tile_size = 16
+
+    for kk in len(a) step tile_size:
+        for jj in len(b[0]) step tile_size:
+            for i in len(b):
+                j_end_val = jj + tile_size
+                for j in range(jj, j_end_val):
+                    k_end_val = kk + tile_size:
+                    sum = output[i][j]
+                    for k in range(kk, k_end_val):
+                        sum = sum + in_a[i][k] * in_b[k][j]
+                    output[i][j] =  sum
+    return output
 
 def main():
 
