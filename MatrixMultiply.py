@@ -15,7 +15,6 @@ def matrixMultiply(a, b):
 
 def main():
 
-
     tmp1 = np.arange(1, 17)
     tmp2 = np.arange(16, 32)
     a = tmp1.reshape(4, 4)
@@ -30,7 +29,6 @@ def main():
     print('New Matrix:')
     print(c)
     print("Time to process: ", str(end - start))
-
 
 if __name__ =='__main__':
     main()
